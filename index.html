@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Offer Bar -->
+    <div class="offer">
+        Free delivery on orders above ₹499
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="top-header">
+
+            <div class="logo">
+                📚 BookNest
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search books, authors, genres...">
+                <button>🔍</button>
+            </div>
+
+            <div class="header-icons">
+                <span>👤 Account</span>
+                <span>❤️ Wishlist</span>
+                <span>🛒 Cart <b>(0)</b></span>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#new">New Arrivals</a>
+            <a href="#age">Browse by Age</a>
+            <a href="#genre">Genres</a>
+            <a href="#collections">Collections</a>
+            <a href="#education">Education</a>
+            <a href="#stationery">Stationery</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p>DISCOVER YOUR NEXT FAVORITE BOOK</p>
+
+            <h1>Books That<br>Take You Places</h1>
+
+            <p>
+                Explore thousands of books for readers of every age.
+            </p>
+
+            <a href="#new" class="shop-btn">
+                Explore Books →
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-grid">
+
+            <div class="category">
+                📚
+                <h3>Fiction</h3>
+            </div>
+
+            <div class="category">
+                🧒
+                <h3>Children's Books</h3>
+            </div>
+
+            <div class="category">
+                🎓
+                <h3>Education</h3>
+            </div>
+
+            <div class="category">
+                🧠
+                <h3>Self Help</h3>
+            </div>
+
+            <div class="category">
+                🔬
+                <h3>Science</h3>
+            </div>
+
+            <div class="category">
+                ✏️
+                <h3>Stationery</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="new" class="products-section">
+
+        <div class="section-heading">
+            <div>
+                <h2>New Arrivals</h2>
+                <p>Fresh books added to our collection</p>
+            </div>
+
+            <a href="#">View All →</a>
+        </div>
+
+        <div class="products">
+
+            <div class="product">
+                <span class="wishlist">♡</span>
+                <div class="book-image">📕</div>
+
+                <h3>The Power of Now</h3>
+                <p>Personal Development</p>
+
+                <div class="price">
+                    ₹399
+                    <del>₹499</del>
+                </div>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <span class="wishlist">♡</span>
+                <div class="book-image">📗</div>
+
+                <h3>Atomic Habits</h3>
+                <p>Self Help</p>
+
+                <div class="price">
+                    ₹450
+                    <del>₹599</del>
+                </div>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <span class="wishlist">♡</span>
+                <div class="book-image">📘</div>
+
+                <h3>Think Like a Monk</h3>
+                <p>Motivation</p>
+
+                <div class="price">
+                    ₹350
+                    <del>₹499</del>
+                </div>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <span class="wishlist">♡</span>
+                <div class="book-image">📙</div>
+
+                <h3>Ikigai</h3>
+                <p>Life & Philosophy</p>
+
+                <div class="price">
+                    ₹299
+                    <del>₹399</del>
+                </div>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Browse by Age -->
+    <section id="age" class="age-section">
+
+        <h2>Browse Books By Age</h2>
+
+        <div class="age-grid">
+
+            <div>
+                <h3>👶 0 - 3 Years</h3>
+                <p>Picture & board books</p>
+            </div>
+
+            <div>
+                <h3>🧒 4 - 7 Years</h3>
+                <p>Fun learning & stories</p>
+            </div>
+
+            <div>
+                <h3>👦 8 - 12 Years</h3>
+                <p>Adventure & discovery</p>
+            </div>
+
+            <div>
+                <h3>🧑 13+ Years</h3>
+                <p>Young adult collection</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Genres -->
+    <section id="genre" class="genres">
+
+        <h2>Explore Popular Genres</h2>
+
+        <div class="genre-list">
+            <span>Fiction</span>
+            <span>Romance</span>
+            <span>Thriller</span>
+            <span>Fantasy</span>
+            <span>Biography</span>
+            <span>Business</span>
+            <span>Technology</span>
+            <span>Children</span>
+        </div>
+
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" class="collections">
+
+        <h2>Our Collections</h2>
+
+        <div class="collection-grid">
+
+            <div>
+                <h3>📖 Indian Literature</h3>
+                <p>Discover stories and writers from India.</p>
+            </div>
+
+            <div>
+                <h3>🌎 World Classics</h3>
+                <p>Timeless books from around the world.</p>
+            </div>
+
+            <div>
+                <h3>💻 Technology</h3>
+                <p>Learn programming and modern technology.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="education">
+
+        <div>
+            <h2>Education & Learning</h2>
+
+            <p>
+                Find textbooks, competitive exam books,
+                reference materials and learning resources.
+            </p>
+
+            <button>Explore Education</button>
+        </div>
+
+    </section>
+
+    <!-- Stationery -->
+    <section id="stationery" class="stationery">
+
+        <h2>Stationery</h2>
+
+        <p>Everything you need for study and creativity.</p>
+
+        <div class="stationery-items">
+            <span>✏️ Pens</span>
+            <span>📓 Notebooks</span>
+            <span>📔 Journals</span>
+            <span>🎨 Art Supplies</span>
+        </div>
+
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <h2>Stay Updated</h2>
+
+        <p>
+            Subscribe for new books, offers and recommendations.
+        </p>
+
+        <div>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div>
+            <h2>📚 BookNest</h2>
+            <p>Your destination for books and learning.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <p>About Us</p>
+            <p>Contact</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+        </div>
+
+        <div>
+            <h3>Customer Support</h3>
+            <p>Help Center</p>
+            <p>Track Order</p>
+            <p>FAQs</p>
+        </div>
+
+    </footer>
+
+    <div class="copyright">
+        © 2026 BookNest. All Rights Reserved.
+    </div>
+
+    <script>
+
+        let cartCount = 0;
+
+        function addToCart() {
+
+            cartCount++;
+
+            document.querySelectorAll(".header-icons b").forEach(
+                element => element.innerText = cartCount
+            );
+
+            alert("Book added to cart!");
+        }
+
+    </script>
+
+</body>
+</html>
