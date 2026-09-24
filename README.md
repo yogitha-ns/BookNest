@@ -27,11 +27,17 @@ The project is developed as a web application and containerized using Docker, ma
 
 BookNest/
 │
+
 ├── public/
-├── src/
-├── Dockerfile
-├── package.json
-├── package-lock.json
+├
+── src/
+├
+── Dockerfile
+├
+── package.json
+├
+── package-lock.json
+
 └── README.md
 
 «The exact project structure may vary depending on the current version of the project.»
